@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Photo Gallery</title>
+    <style>
+	body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.controls {
+    margin-top: 10px;
+	
+}
+.controls button{
+	padding: 8px 22px;
+	background-color:black;
+	color:#fff;
+	border-radius:5rem;
+	}
+.controls button:hover{
+	background:#fff;
+	color:black;
+}
+
+
+img {
+    max-width: 25%;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+</style>
+	
+</head>
+<body>
+
+    <div class="gallery">
+	<h2>Image Gallery</h2>
+        <img src="p1.jpg" alt="Image 1" id="galleryImg">
+        <div class="controls">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </div>
+
+    <script src="photo.js"></script>
+</body>
+</html>
