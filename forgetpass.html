@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+	font-family: 'Poppins', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	scroll-behavior:smooth;
+    scroll-padding-top:3rem;
+	list-style:none;
+	text-decoration:none;
+
+}
+.container button{
+	padding: 8px 22px;
+	background-color:black;
+	color:#fff;
+	border-radius:5rem;
+	}
+.container button:hover{
+	background:#fff;
+	color:black;
+}
+.container h2{
+		font-size:1.4rem;
+		text-align: center;
+	}
+
+.container form{
+		display:flex;
+		flex-direction:column;
+		
+	
+	}
+	.container form input{
+		border:1px solid black;
+		outline:none;
+		padding:12px 20px;
+		width:100%;
+		background-color:black;
+		margin:8px 0;
+		
+		
+	}
+	.container form .buttom{
+		
+		outline:none;
+		border:none;
+		background-color:black;
+		color:white;
+		font-size:0.58rem;
+		font-weight:100;
+		width:100%;
+		padding:14px 20px;
+		margin:8px 0;
+		cursor:pointer;
+		
+		
+	}
+	.container form .buttom:hover{
+		background:black;
+	}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Forget Password</h2>
+        <form action="#" method="post" onsubmit="return sendResetEmail()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Send Reset Email</button>
+        </form>
+    </div>
+
+    <script>
+        function sendResetEmail() {
+            // You would typically send an AJAX request to the server to handle the password reset logic.
+            // This is a placeholder function for demonstration purposes.
+            alert("A reset email has been sent to the provided email address.");
+            return false; // Prevent form submission for the sake of this example.
+        }
+    </script>
+</body>
+</html>
