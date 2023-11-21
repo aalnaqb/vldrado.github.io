@@ -1,5 +1,5 @@
 // Array of image sources
-var images = ["p1.jpg", "p2.jpg", "p3.jpg", "p4.jpg" , "p5.jpg","p6.jpg"];
+var images = ["p1.jpg", "p2.jpg", "p3.jpg", "p4.jpg" , "p5.jpg","p6.jpg","p7.jpg"];
 var currentImageIndex = 0;
 
 // Function to update the displayed image
